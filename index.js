@@ -27,7 +27,7 @@ const LOG_CHANNEL_ID = process.env.LOG_CHANNEL_ID || "";
 const SUGGESTION_CHANNEL_ID = process.env.SUGGESTION_CHANNEL_ID || "";
 const REPORT_CHANNEL_ID = process.env.REPORT_CHANNEL_ID || "";
 const DATA_FILE = process.env.DATA_FILE || "./palmor-data.json";
-const BOT_OWNER_IDS = new Set(String(process.env.BOT_OWNER_IDS || process.env.1265951794891329561 || "").split(/[ ,]+/).map(id => id.trim()).filter(Boolean));
+const BOT_OWNER_IDS = new Set(String(process.env.BOT_OWNER_IDS || process.env.OWNER_USER_ID || "").split(/[ ,]+/).map(id => id.trim()).filter(Boolean));
 
 let quarantineRoleId = process.env.QUARANTINE_ROLE_ID || "";
 
